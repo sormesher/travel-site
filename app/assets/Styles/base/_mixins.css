@@ -15,3 +15,13 @@
 		@mixin-content;
 	}
 }
+
+/* This bit creates an empty pseudo component 'after' the row contents
+and clears the float. The display line is for browser support. */
+@define-mixin clearfix {
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}

@@ -1,7 +1,28 @@
 .wrapper {
+	overflow: hidden; /* In conjunction with _row.css negative margin */
 	padding-left: 18px;
 	padding-right: 18px;
-	max-width: 1200px;
+	max-width: 1236px;
 	margin-left: auto;
 	margin-right: auto;
+
+	&--medium {
+		max-width: 976px;
+	}
+
+	/* This bit says that any wrapper nested within a wrapper, 
+	shouldn't have the base padding. Stops images looking 
+	over-padded on small screens. */
+	.wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&--b-margin {
+		margin-bottom: 1rem;
+
+		@mixin atSmall {
+			margin-bottom: 3.875rem;
+		}
+	}
 }

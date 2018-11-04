@@ -7,3 +7,11 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+* {
+	box-sizing: border-box; /* stops total width being 100%+padding */
+}
+
+a {
+	color: $mainOrange;
+}
