@@ -1,5 +1,3 @@
-var john = new Person("John Doe", "blue");
-john.greet();
+import MobileMenu from './modules/MobileMenu';
 
-var jane = new Person("Jane Smith", "green");
-jane.greet();
+var mobileMenu = new MobileMenu();
